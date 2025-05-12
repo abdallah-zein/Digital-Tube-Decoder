@@ -32,7 +32,7 @@ module digital_tube_decoder (clk,A,sel, seg, an);
                                          .x3({3'b000,sign}),
                                          .x2(HUNDS),
                                          .x1(TENS),
-                                         .x0(ONES),
+                                         .x0((sel)? A[3:0] : ONES),
                                          .seg(seg),
                                          .an(an)
                                          );

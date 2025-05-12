@@ -6,7 +6,7 @@ if the selection is 0 then the ALU preforms an arithmetic operation, so it showe
 if the selection is 0 then the ALU preforms a logical operation, so it showes the 4-bit binary value on the 7-seg displays <br>
 
 # How to use 
-1- include all (.v) files to your project <br>
+1- include all (.v) files in your project <br>
 2- instanitate "Top_module.v" to your ALU top module where:<br>
     - Output of the ALU is connected to input (A)<br>
     - The MSB of the selection line is connectd to the input (sel)<br>

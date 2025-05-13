@@ -51,8 +51,8 @@ module display_ctrl #(
     // 7-seg converter
     always @*
         case (d)
-        4'h0: seg = (counter[cdbits-1:cdbits-2] == 3)? 7'b1111111 : 7'b0000001; 
-        4'h1: seg = (counter[cdbits-1:cdbits-2] == 3)? 7'b1111110 : 7'b1001111;
+        4'h0: seg = (counter[cdbits-1:cdbits-2] == 3 && sel)? 7'b0000001 : (counter[cdbits-1:cdbits-2] != 3)? 7'b0000001 : 7'b1111111; 
+        4'h1: seg = (counter[cdbits-1:cdbits-2] == 3 && sel)? 7'b1001111 : (counter[cdbits-1:cdbits-2] != 3)? 7'b1001111 : 7'b1111110;
         4'h2: seg = 7'b0010010;
         4'h3: seg = 7'b0000110;
         4'h4: seg = 7'b1001100;

@@ -3,7 +3,7 @@ a specific module that converts 8-bit signed binary inputs into Binary-Coded Dec
 
 # How it works 
 if the selection is 0 then the ALU preforms an arithmetic operation, so it showes the signed decimal value on the 7-seg displays <br>
-if the selection is 0 then the ALU preforms a logical operation, so it showes the 4-bit binary value on the 7-seg displays <br>
+if the selection is 1 then the ALU preforms a logical operation, so it showes the 4-bit binary value on the 7-seg displays <br>
 
 # How to use 
 1- include all (.v) files in your project <br>
